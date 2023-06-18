@@ -1,0 +1,262 @@
+/* Корзина */
+
+.сart {
+    background-color: white;
+    width: 280px;
+    height: 700px;
+    /* Щоб займало всю доступну висоту вікна */
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* Тінь для панелі */
+    font-family: Arial;
+}
+
+.pizza-orders {
+    background-color: #f9fafc;
+    width: 280px;
+    height: 520px;
+    position: fixed;
+    top: 80px;
+    right: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: Arial;
+    overflow-y: auto;
+
+}
+
+.orders {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.amount-order {
+    background-color: orange;
+    border-radius: 10px;
+    font-family: Arial;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    margin-left: 10px;
+    vertical-align: 14%
+}
+
+.clean-orders {
+    font-size: 10px;
+    color: rgb(152, 155, 158);
+    text-align: right;
+    border: none; 
+    background: none;
+    position: relative;
+    top: -13px; /* Змініть значення на величину зміщення, яку ви бажаєте */
+}
+
+.thesum {
+    font-weight: bold;
+    font-size: 13px;
+    position: relative;
+    top: 520px;
+}
+
+.sumnumber {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: right;
+    position: relative;
+    top: 480px;
+}
+
+.cart-order {
+    position: absolute;
+    bottom: 0px;
+    width: 200px;
+    height: 40px;
+    right: -60px;
+    transform: translate(-50%, -50%);
+    background-color: orange;
+    color: white;
+    border-color: rgb(252, 217, 154);
+    border-radius: 6px;
+}
+
+.item1,
+.item2,
+.item3 {
+    color: orange;
+}
+
+.price {
+    color: black;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.measures {
+    font-size: 12px;
+    color: black;
+}
+
+.measures,
+img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 1px;
+    width: 8%;
+
+}
+
+.item1 {
+    margin-top: -25px;
+}
+
+.pizza1, .pizza2, .pizza3 {
+    position: relative;
+    left: 170px;
+    top: -140px;
+    width: 30%;
+}
+
+.pizza2{
+    top: -135px;
+}
+
+.pizza3{
+    top: -120px;
+}
+
+.button {
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    border-radius: 80%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 15px;
+    font-weight: 50;
+    border: none; /* Видалити обводку */
+
+}
+
+.remove-button {
+    background-color: rgb(219, 21, 21);
+    top: 103px;
+    left: 78px;
+}
+
+.add-button {
+    background-color: rgb(17, 140, 17);
+    left: 128px;
+    top: 103px;
+}
+
+.cancel-button {
+    background-color: rgb(255, 255, 255);
+    left: 160px;
+    top: 103px;
+    color:orange;
+    width: 23px;
+    height: 23px;
+}
+
+
+.remove-button2 {
+    background-color: rgb(219, 21, 21);
+    top: 236px;
+    left: 78px;
+}
+
+.add-button2 {
+    background-color: rgb(17, 140, 17);
+    left: 128px;
+    top: 236px;
+}
+
+.cancel-button2 {
+    background-color: rgb(255, 255, 255);
+    left: 160px;
+    top: 236px;
+    color:orange;
+    width: 23px;
+    height: 23px;
+}
+
+.remove-button3 {
+    background-color: rgb(219, 21, 21);
+    top: 370px;
+    left: 78px;
+}
+
+.add-button3 {
+    background-color: rgb(17, 140, 17);
+    left: 128px;
+    top: 370px;
+}
+
+.cancel-button3 {
+    background-color: rgb(255, 255, 255);
+    left: 160px;
+    top: 370px;
+    color:orange;
+    width: 23px;
+    height: 23px;
+}
+
+
+#counter{
+    color:black;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    top: -29px;
+    left: 89px;
+} 
+
+ #counter2{
+    color:black;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    top: -29px;
+    left: 89px;
+} 
+
+#counter3{
+    color:black;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    top: -29px;
+    left: 89px;
+} 
+
+@media only screen and (max-width: 1189px) {
+    .pizza-orders {
+       
+        height: 480px;
+    }
+    .thesum {
+        top: 500px;
+    }
+    .sumnumber {
+        
+        top: 465px;
+    }
+    .cart-order {
+        top: 620px;
+    }
+
+  }

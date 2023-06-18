@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="main.css" />
+  <link rel="stylesheet" type="text/css" href="menu.css" />
+  <link rel="stylesheet" type="text/css" href="cart.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Page</title>
+</head>
+
+<body>
+
+  <!-- Основна сторінка -->
+  <div class="container">
+    <section class="p-header">
+      <p class="all-pizza">Усі піци</p>
+      <span class="amount">5</span>
+    </section>
+
+    <section class="pizza-type">
+      <button class="pizza-1">Усі</button>
+      <button class="pizza-2">Мясні</button>
+      <button class="pizza-3">З ананасами</button>
+      <button class="pizza-4">З грибами</button>
+      <button class="pizza-5">З морепродуктами</button>
+      <button class="pizza-6">Вега</button>
+    </section>
+
+    <!-- Перша піца -->
+    <section class="menu-1">
+      <div class="new">Нова</div>
+      <img class="pizza-menu" src="pizza_5.jpg" alt="menu1">
+      <p class="menu-title">Імпреза</p>
+      <p class="menu-type">М'ясна піца</p>
+      <p class="ingridients">Балик, салямі, куриця, сир моцарелла
+        сир рокфорд, ананаси, томатна паста
+        петрушка</p>
+
+      <img src="1.png" alt="1">
+      <p class="measures mea-1">30</p>
+      <img src="2.png" alt="2">
+      <p class="measures mea-1">370</p>
+
+      <img class="mea-img2" src="1.png" alt="1">
+      <p class="measures mea-2">40</p>
+      <img src="2.png" alt="2">
+      <p class="measures mea-2">660</p>
+      <p class = "menu-price-small">99 грн.</p>
+      <p class = "menu-price-big">169 грн.</p>
+      <button class="buybutton buy-small1" type="button" onclick="addToCart('Імпреза', 'Мала', 99)">Купити</button>
+      <button class="buybutton buy-big1" type="button" onclick="addToCart('Імпреза', 'Велика', 169)">Купити</button>
+    </section>
+
+    <!-- Перша піца -->
+
+
+    <!-- Друга піца -->
+    <section class="menu-1 menu-2">
+      <img class="pizza-menu" src="pizza_1.jpg" alt="menu2">
+      <div class="new popular">Популярна</div>
+      <p class="menu-title">BBQ</p>
+      <p class="menu-type">М'ясна піца</p>
+      <p class="ingridients">Мисливські ковбаски, ковбаски
+        папероні, шинка, сир домашній,
+        шампінйони, петрушка. оливки</p>
+
+        <img src="1.png" alt="1">
+        <p class="measures mea-1">30</p>
+        <img src="2.png" alt="2">
+        <p class="measures mea-1">460</p>
+        
+        <img class="mea-img2" src="1.png" alt="1">
+      <p class="measures mea-2">40</p>
+      <img src="2.png" alt="2">
+      <p class="measures mea-2">840</p>
+
+      <p class = "menu-price-small">139 грн.</p>
+      <p class = "menu-price-big">199 грн.</p>
+      <button class="buybutton buy-small1" type="button" onclick="addToCart('BBQ', 'Мала', 139)">Купити</button>
+      <button class="buybutton buy-big1" type="button" onclick="addToCart('BBQ', 'Велика', 199)">Купити</button>
+
+    </section>
+    <!-- Друга піца -->
+
+    <!-- Третя піца -->
+    <section class="menu-1 menu-3">
+      <img class="pizza-menu" src="pizza_3.jpg" alt="menu3">
+      <p class="menu-title">Міксовий поло</p>
+      <p class="menu-type">Вега</p>
+      <p class="ingridients">Вітчина. куриця копчена, сир моцарелла,
+        ананаси, кукурудза, петрушка, coус томатний</p>
+
+        <img src="1.png" alt="1">
+        <p class="measures mea-1">30</p>
+        <img src="2.png" alt="2">
+        <p class="measures mea-1">430</p>
+        
+        <img class="mea-img2" src="1.png" alt="1">
+      <p class="measures mea-2">40</p>
+      <img src="2.png" alt="2">
+      <p class="measures mea-2">780</p>
+
+      <p class = "menu-price-small">115 грн.</p>
+      <p class = "menu-price-big">179 грн.</p>
+      <button class="buybutton buy-small1" type="button" onclick="addToCart('Міксовий поло', 'Мала', 115)">Купити</button>
+      <button class="buybutton buy-big1" type="button" onclick="addToCart('Міксовий поло', 'Велика', 179)">Купити</button>
+    </section>
+    <!-- Третя піца -->
+
+
+    <!-- Четверта піца -->
+    <section class="menu-1 menu-4">
+      <img class="pizza-menu" src="pizza_2.jpg" alt="menu4">
+      <p class="menu-title">Россо Густо</p>
+      <p class="menu-type">М'ясна піца</p>
+      <p class="ingridients">Вітчина. куриця копчена, ковбаски
+        папероні, шинка, кукурудза, петрушка, coус томатний</p>
+
+        <img src="1.png" alt="1">
+        <p class="measures mea-1">30</p>
+        <img src="2.png" alt="2">
+        <p class="measures mea-1">400</p>
+        
+        <img class="mea-img2" src="1.png" alt="1">
+      <p class="measures mea-2">40</p>
+      <img src="2.png" alt="2">
+      <p class="measures mea-2">780</p>
+
+      <p class = "menu-price-small">189 грн.</p>
+      <p class = "menu-price-big">220 грн.</p>
+      <button class="buybutton buy-small1" type="button" onclick="addToCart('Россо Густо', 'Мала', 189)">Купити</button>
+      <button class="buybutton buy-big1" type="button" onclick="addToCart('Россо Густо', 'Велика', 220)">Купити</button>
+    </section>
+    <!-- Четверта піца -->
+
+    <!-- П'ята піца -->
+    <section class="menu-1 menu-5">
+      <img class="pizza-menu" src="pizza_4.jpg" alt="menu5">
+      <p class="menu-title">Дольче Маре</p>
+      <p class="menu-type">Морська піца</p>
+      <p class="ingridients">Ікра червона, лосось копчений, сир моцарелла, оливкова олія, вершки, філе червоної риби</p>
+
+        <img src="1.png" alt="1">
+        <p class="measures mea-1">30</p>
+        <img src="2.png" alt="2">
+        <p class="measures mea-1">400</p>
+        
+        <img class="mea-img2" src="1.png" alt="1">
+      <p class="measures mea-2">40</p>
+      <img src="2.png" alt="2">
+      <p class="measures mea-2">780</p>
+
+      <p class = "menu-price-small">189 грн.</p>
+      <p class = "menu-price-big">299 грн.</p>
+      <button class="buybutton buy-small1" type="button" onclick="addToCart('Дольче Маре', 'Мала', 189)">Купити</button>
+      <button class="buybutton buy-big1" type="button" onclick="addToCart('Дольче Маре', 'Велика', 299)">Купити</button>
+    </section>
+    <!-- П'ята піца -->
+
+  </div>
+
+  <footer class="top-info">
+    <div class="top-text">
+      <p>(044) 222 5 222</p>
+      <p>24 години/7 днів на тиждень</p>
+      <p>Безкоштовна доставка піци</p>
+      <hr class="line">
+      <p class="pizza">Піца</p>
+      <button class="enter" type="button">Ввійти</button>
+    </div>
+  </footer>
+
+  <!-- Нижній контейнер  -->
+  <footer class="info">
+    <p>Pizza.22 - практичний проект в межах курсу JavaScript в Києво-Могилянській Академії</p>
+    <p>Доставка піци не здійснюється</p>
+  </footer>
+
+  <!-- Логотипи -->
+  <div class="logo">
+    <img src="logo.png" alt="logo">
+  </div>
+
+  <div class="badge">
+    <img src="button1.png" alt="sale">
+
+  </div>
+
+  <!-- Боковий контейнер (Корзина) -->
+  <div class="сart">
+    <p class="orders">Замовлення</p>
+    <span class="amount-order">0</span>
+    <button class="clean-orders" type="button" onclick="clearCart()">Очистити <br />замовлення</button>
+    <p class="thesum">Сума замовлення</p>
+    <p class="sumnumber">0 грн</p>
+    <button class="cart-order">Замовити</button>
+  </div>
+
+  <div class="pizza-orders">
+    <!-- ЕЛЕМЕНТ 1 -->
+    <!-- <section class=item1>
+      <p>BBQ (мала)</p>
+      <img src="1.png" alt="1">
+      <p class="measures">30</p>
+      <img src="2.png" alt="2">
+      <p class="measures">460</p>
+      <p class="price">139 грн</p>
+      <button class="button remove-button">
+        <p>-</p>
+      </button>
+      <div id="counter">
+        <p>4</p>
+      </div>
+      <button class="button add-button">
+        <p>+</p>
+      </button>
+      <button class="button cancel-button">
+        <p>x</p>
+      </button>
+      <img class="pizza1" src="pizza_1.jpg" alt="p1">
+      <hr style=" margin-top: -100px;">
+
+    </section> -->
+    <!-- ЕЛЕМЕНТ 2 -->
+    <!-- <section class=item2>
+      <p>Россо Густо (Мала)</p>
+      <img src="1.png" alt="1">
+      <p class="measures">30</p>
+      <img src="2.png" alt="2">
+      <p class="measures">400</p>
+      <p class="price">189 грн</p>
+
+      <button class="button remove-button2">
+        <p>-</p>
+      </button>
+      <div id="counter2">
+        <p>1</p>
+      </div>
+      <button class="button add-button2">
+        <p>+</p>
+      </button>
+      <button class="button cancel-button2">
+        <p>x</p>
+      </button>
+
+      <img class="pizza2" src="pizza_2.jpg" alt="p2">
+      <hr style=" margin-top: -100px;">
+    </section> -->
+
+    <!-- ЕЛЕМЕНТ 3 -->
+    <!-- <section class=item3>
+      <p>Міксовий поло (Велика)</p>
+      <img src="1.png" alt="1">
+      <p class="measures">40</p>
+      <img src="2.png" alt="2">
+      <p class="measures">780</p>
+      <p class="price">179 грн</p>
+
+      <button class="button remove-button3">
+        <p>-</p>
+      </button>
+      <div id="counter3">
+        <p>1</p>
+      </div>
+      <button class="button add-button3">
+        <p>+</p>
+      </button>
+      <button class="button cancel-button3">
+        <p>x</p>
+      </button>
+      <img class="pizza3" src="pizza_3.jpg" alt="p3">
+      <hr style=" margin-top: -100px;">
+    </section> -->
+  </div>
+  <!-- Боковий контейнер (Корзина) -->
+
+
+  <script src="1.js"></script>
+  <script src="2.js"></script>
+  <script src="3.js"></script>
+  <script src="4.js"></script>
+  <script src="5.js"></script>
+  <script src="6.js"></script>
+  <script src="7.js"></script>
+  <script src="8.js"></script>
+
+
+
+</body>
+
+
+</html>

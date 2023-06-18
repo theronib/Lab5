@@ -1,0 +1,182 @@
+/* Сторінка сайту (без меню) */
+  
+  .info {
+    background-color: rgb(245, 248, 248);
+    font-family: Arial;
+    color: grey;
+    padding: 30px;
+    font-size: 11px;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); 
+    margin-top: 100px;
+
+  }
+
+.top-info {
+  background-color: rgb(65, 60, 60);
+  font-family: Arial;
+  color: rgb(170, 168, 168);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0.9; 
+  text-align: left; 
+  height: 40px;
+  padding: 30px 0 30px 148px; 
+}
+
+.top-text p{
+  display:inline;
+  margin: 0 15px; 
+  font-size: 100%;
+}
+
+.enter{
+  background-color: orange;
+  color: rgb(255, 255, 255);
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 13px;
+  width: 70px;
+  height: 5px;
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  border: 2px solid rgb(205, 134, 3);
+  position: fixed;
+  top: 5%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}
+
+.top-info .top-text p:nth-child(2) {
+  font-size: 70%;
+}
+
+
+body {
+    background-color: #fffaea;
+    margin: 0;
+    padding: 0;
+}
+
+.badge {
+  width: 100px; /* Заданий ширина зображення */
+    color: white;
+    font-family: Arial;
+    padding: 30px; 
+    position: absolute;
+    display: flex;
+    align-items: flex-start;
+    margin-top: -10px;
+    position: fixed;
+    top: 76%;
+    left: -2%;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .badge img {
+    width: 195%;
+    height: auto;
+}
+
+.logo{
+  width: 100px; /* Заданий ширина зображення */
+  color: white;
+  font-family: Arial;
+  padding: 30px; 
+  position: absolute;
+  display: flex;
+  align-items: flex-start;
+  margin-top: -10px;
+  position: fixed;
+  top: -5.5%;
+  left: -1.2%;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo img {
+  width: 150%;
+  height: auto;
+}
+
+
+@media only screen and (max-width: 1120px) {
+  .top-info .top-text p:nth-child(3) {
+    visibility: hidden;
+  }
+
+  .enter {
+    left: 55%;
+  }
+
+}
+
+
+@media only screen and (max-width: 980px) {
+  .top-info .top-text p:nth-child(2) {
+    visibility: hidden;
+  }
+  }
+
+  @media screen and (max-width: 730px) {
+    .line,
+    .pizza {
+      visibility: hidden;
+    }
+
+    .enter{
+      top: 11%;
+      left: 35%;
+    }
+  }
+  
+  @media only screen and (max-width: 1100px) {
+    .info{
+      margin-top: 550px;
+    }
+
+        }
+
+  @media only screen and (max-width: 780px) {
+.info{
+  margin-top: 1380px;
+}
+    }
+
+    @media only screen and (max-width: 625px) {
+
+      .info{
+        margin-top: 1520px;
+      }
+  }
+
+  @media only screen and (max-width: 800px) {
+
+    .info{
+      margin-top: 1500px;
+    }
+}
+
+
+
+@media only screen and (max-width: 1189px) {
+
+  body {
+    zoom: 107%;
+  }
+
+
+}
+
+@media only screen and (max-width: 1100px) {
+
+  body {
+    zoom: 109%;
+  }
+}
