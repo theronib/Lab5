@@ -1,48 +1,91 @@
-function addToCart(pizzaName, size, price) {
-    // Create a new item element
-    var newItem = document.createElement('section');
-    newItem.className = 'item';
-    
-    // Set the content of the new item
-    newItem.innerHTML = `
-      <p>${pizzaName} (${size})</p>
-      <img src="1.png" alt="1">
-      <p class="measures">30</p>
-      <img src="2.png" alt="2">
-      <p class="measures">460</p>
-      <p class="price">${price} грн</p>
-  
-      <button class="button remove-button">
-        <p>-</p>
-      </button>
-      <div id="counter">
-        <p>1</p>
-      </div>
-      <button class="button add-button">
-        <p>+</p>
-      </button>
-      <button class="button cancel-button">
-        <p>x</p>
-      </button>
-  
-      <img class="pizza1" src="pizza_1.jpg" alt="p1">
-      <hr style=" margin-top: -100px;">
-    `;
-    
-    // Append the new item to the pizza-orders div
-    var pizzaOrdersDiv = document.querySelector('.pizza-orders');
-    pizzaOrdersDiv.appendChild(newItem);
+function addToCart(pizzaName, size, price, imageSrc) {
+  var newItem = document.createElement('section');
+  newItem.className = 'item';
 
-    // Update cart quantity and total price
+  newItem.innerHTML = `
+    <p>${pizzaName} (${size})</p>
+    <img src="1.png" alt="1">
+    <p class="measures">30</p>
+    <img src="2.png" alt="2">
+    <p class="measures">460</p>
+    <p class="price">${price} грн</p>
+
+    <button class="button remove-button">
+      <p>-</p>
+    </button>
+    <div class="counter">
+      <p>1</p>
+    </div>
+    <button class="button add-button">
+    <p>+</p>
+    </button>
+    <button class="button cancel-button">
+      <p>x</p>
+    </button>
+
+    <img class="pizza1" src="${imageSrc}" alt="p1">
+    <hr style="margin-top: -5px;">
+  `;
+
+  var pizzaOrdersDiv = document.querySelector('.pizza-orders');
+  pizzaOrdersDiv.appendChild(newItem);
+
+  var removeButton = newItem.querySelector('.remove-button');
+  var addButton = newItem.querySelector('.add-button');
+  var cancelButton = newItem.querySelector('.cancel-button');
+  var counter = newItem.querySelector('.counter p');
+
+  removeButton.addEventListener('click', function() {
+    var count = parseInt(counter.textContent);
+    if (count > 1) {
+      count--;
+      counter.textContent = count;
+      cartQuantity--;
+      cartTotal -= price;
+      updateCartDisplay();
+      updateCartData();
+    } else {
+      // Remove the item from the list
+      pizzaOrdersDiv.removeChild(newItem);
+      cartQuantity--;
+      cartTotal -= price;
+      updateCartDisplay();
+      updateCartData();
+    }
+  });
+  
+
+function handleAddButtonClick() {
+  var count = parseInt(counter.textContent);
+  count++;
+  counter.textContent = count;
+  cartQuantity++;
+  cartTotal += price;
+  updateCartDisplay();
+  updateCartData();
+}
+
+addButton.onclick = handleAddButtonClick;
+
+  cancelButton.addEventListener('click', function() {
+    var count = parseInt(counter.textContent);
+    cartQuantity -= count; // Subtract the count from cartQuantity
+    cartTotal -= price * count; // Subtract the price multiplied by count from cartTotal
+    updateCartDisplay();
+    updateCartData();
+  
+    pizzaOrdersDiv.removeChild(newItem);
+  });
+  
+
   cartQuantity++;
   cartTotal += price;
 
-  // Update the cart display
   updateCartDisplay();
-
   updateCartData();
+}
 
-  }
+
   
 
   // Global variables to keep track of the cart quantity and total price
@@ -115,3 +158,6 @@ function updateCartData() {
   
   // Call retrieveCartData() when the page loads to retrieve and update the cart data
   window.addEventListener('load', retrieveCartData);
+
+
+  

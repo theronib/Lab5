@@ -119,28 +119,22 @@ img {
     margin-top: -25px;
 }
 
-.pizza1, .pizza2, .pizza3 {
+.pizza1 {
     position: relative;
-    left: 170px;
-    top: -140px;
-    width: 30%;
-}
+    max-width: 100%;
+    height: auto;
+    width: 25%;
+    margin-left: 160px;
+    margin-top: -140px;
+  }
+  
 
-.pizza2{
-    top: -135px;
-}
 
-.pizza3{
-    top: -120px;
-}
 
 .button {
-    position: absolute;
     width: 21px;
     height: 21px;
     border-radius: 80%;
-    top: 50%;
-    transform: translateY(-50%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -148,100 +142,43 @@ img {
     font-size: 15px;
     font-weight: 50;
     border: none; /* Видалити обводку */
+    margin-top: 3px;
 
 }
 
 .remove-button {
     background-color: rgb(219, 21, 21);
-    top: 103px;
-    left: 78px;
-}
-
-.add-button {
+    margin-left: 56px;
+    margin-top: -30px;
+  }
+  
+  .add-button {
     background-color: rgb(17, 140, 17);
-    left: 128px;
-    top: 103px;
-}
-
-.cancel-button {
+    margin-left: 111px;
+    margin-top: -34px;
+  }
+  
+  .cancel-button {
     background-color: rgb(255, 255, 255);
-    left: 160px;
-    top: 103px;
-    color:orange;
-    width: 23px;
-    height: 23px;
-}
+    color: orange;
+    margin-left: 153px;
+    margin-top: -20px; 
+  }
 
 
-.remove-button2 {
-    background-color: rgb(219, 21, 21);
-    top: 236px;
-    left: 78px;
-}
-
-.add-button2 {
-    background-color: rgb(17, 140, 17);
-    left: 128px;
-    top: 236px;
-}
-
-.cancel-button2 {
-    background-color: rgb(255, 255, 255);
-    left: 160px;
-    top: 236px;
-    color:orange;
-    width: 23px;
-    height: 23px;
-}
-
-.remove-button3 {
-    background-color: rgb(219, 21, 21);
-    top: 370px;
-    left: 78px;
-}
-
-.add-button3 {
-    background-color: rgb(17, 140, 17);
-    left: 128px;
-    top: 370px;
-}
-
-.cancel-button3 {
-    background-color: rgb(255, 255, 255);
-    left: 160px;
-    top: 370px;
-    color:orange;
-    width: 23px;
-    height: 23px;
-}
-
-
-#counter{
+.counter{
     color:black;
     font-size: 14px;
     font-weight: bold;
-    position: relative;
-    top: -29px;
-    left: 89px;
-} 
+    margin-left: 89px;
+    margin-top: -30px;
 
- #counter2{
-    color:black;
-    font-size: 14px;
-    font-weight: bold;
-    position: relative;
-    top: -29px;
-    left: 89px;
-} 
+}  
 
-#counter3{
-    color:black;
-    font-size: 14px;
-    font-weight: bold;
-    position: relative;
-    top: -29px;
-    left: 89px;
-} 
+  
+
+
+
 
 @media only screen and (max-width: 1189px) {
     .pizza-orders {

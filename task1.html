@@ -33,7 +33,7 @@
       <div class="new">Нова</div>
       <img class="pizza-menu" src="pizza_5.jpg" alt="menu1">
       <p class="menu-title">Імпреза</p>
-      <p class="menu-type">М'ясна піца</p>
+      <p class="menu-type">З грибами</p>
       <p class="ingridients">Балик, салямі, куриця, сир моцарелла
         сир рокфорд, ананаси, томатна паста
         петрушка</p>
@@ -49,8 +49,8 @@
       <p class="measures mea-2">660</p>
       <p class = "menu-price-small">99 грн.</p>
       <p class = "menu-price-big">169 грн.</p>
-      <button class="buybutton buy-small1" type="button" onclick="addToCart('Імпреза', 'Мала', 99)">Купити</button>
-      <button class="buybutton buy-big1" type="button" onclick="addToCart('Імпреза', 'Велика', 169)">Купити</button>
+      <button class="buybutton buy-small1" type="button" onclick="addToCart('Імпреза', 'Мала', 99, 'pizza_5.jpg')">Купити</button>
+      <button class="buybutton buy-big1" type="button" onclick="addToCart('Імпреза', 'Велика', 169, 'pizza_5.jpg')">Купити</button>
     </section>
 
     <!-- Перша піца -->
@@ -78,8 +78,8 @@
 
       <p class = "menu-price-small">139 грн.</p>
       <p class = "menu-price-big">199 грн.</p>
-      <button class="buybutton buy-small1" type="button" onclick="addToCart('BBQ', 'Мала', 139)">Купити</button>
-      <button class="buybutton buy-big1" type="button" onclick="addToCart('BBQ', 'Велика', 199)">Купити</button>
+      <button class="buybutton buy-small1" type="button" onclick="addToCart('BBQ', 'Мала', 139, 'pizza_1.jpg')">Купити</button>
+      <button class="buybutton buy-big1" type="button" onclick="addToCart('BBQ', 'Велика', 199, 'pizza_1.jpg')">Купити</button>
 
     </section>
     <!-- Друга піца -->
@@ -104,8 +104,8 @@
 
       <p class = "menu-price-small">115 грн.</p>
       <p class = "menu-price-big">179 грн.</p>
-      <button class="buybutton buy-small1" type="button" onclick="addToCart('Міксовий поло', 'Мала', 115)">Купити</button>
-      <button class="buybutton buy-big1" type="button" onclick="addToCart('Міксовий поло', 'Велика', 179)">Купити</button>
+      <button class="buybutton buy-small1" type="button" onclick="addToCart('Міксовий поло', 'Мала', 115, 'pizza_3.jpg')">Купити</button>
+      <button class="buybutton buy-big1" type="button" onclick="addToCart('Міксовий поло', 'Велика', 179, 'pizza_3.jpg')">Купити</button>
     </section>
     <!-- Третя піца -->
 
@@ -130,8 +130,8 @@
 
       <p class = "menu-price-small">189 грн.</p>
       <p class = "menu-price-big">220 грн.</p>
-      <button class="buybutton buy-small1" type="button" onclick="addToCart('Россо Густо', 'Мала', 189)">Купити</button>
-      <button class="buybutton buy-big1" type="button" onclick="addToCart('Россо Густо', 'Велика', 220)">Купити</button>
+      <button class="buybutton buy-small1" type="button" onclick="addToCart('Россо Густо', 'Мала', 189, 'pizza_2.jpg')">Купити</button>
+      <button class="buybutton buy-big1" type="button" onclick="addToCart('Россо Густо', 'Велика', 220, 'pizza_2.jpg')">Купити</button>
     </section>
     <!-- Четверта піца -->
 
@@ -154,8 +154,8 @@
 
       <p class = "menu-price-small">189 грн.</p>
       <p class = "menu-price-big">299 грн.</p>
-      <button class="buybutton buy-small1" type="button" onclick="addToCart('Дольче Маре', 'Мала', 189)">Купити</button>
-      <button class="buybutton buy-big1" type="button" onclick="addToCart('Дольче Маре', 'Велика', 299)">Купити</button>
+      <button class="buybutton buy-small1" type="button" onclick="addToCart('Дольче Маре', 'Мала', 189, 'pizza_4.jpg')">Купити</button>
+      <button class="buybutton buy-big1" type="button" onclick="addToCart('Дольче Маре', 'Велика', 299, 'pizza_4.jpg')">Купити</button>
     </section>
     <!-- П'ята піца -->
 
@@ -166,7 +166,7 @@
       <p>(044) 222 5 222</p>
       <p>24 години/7 днів на тиждень</p>
       <p>Безкоштовна доставка піци</p>
-      <hr class="line">
+      <hr class="line-cart">
       <p class="pizza">Піца</p>
       <button class="enter" type="button">Ввійти</button>
     </div>
@@ -199,80 +199,7 @@
   </div>
 
   <div class="pizza-orders">
-    <!-- ЕЛЕМЕНТ 1 -->
-    <!-- <section class=item1>
-      <p>BBQ (мала)</p>
-      <img src="1.png" alt="1">
-      <p class="measures">30</p>
-      <img src="2.png" alt="2">
-      <p class="measures">460</p>
-      <p class="price">139 грн</p>
-      <button class="button remove-button">
-        <p>-</p>
-      </button>
-      <div id="counter">
-        <p>4</p>
-      </div>
-      <button class="button add-button">
-        <p>+</p>
-      </button>
-      <button class="button cancel-button">
-        <p>x</p>
-      </button>
-      <img class="pizza1" src="pizza_1.jpg" alt="p1">
-      <hr style=" margin-top: -100px;">
 
-    </section> -->
-    <!-- ЕЛЕМЕНТ 2 -->
-    <!-- <section class=item2>
-      <p>Россо Густо (Мала)</p>
-      <img src="1.png" alt="1">
-      <p class="measures">30</p>
-      <img src="2.png" alt="2">
-      <p class="measures">400</p>
-      <p class="price">189 грн</p>
-
-      <button class="button remove-button2">
-        <p>-</p>
-      </button>
-      <div id="counter2">
-        <p>1</p>
-      </div>
-      <button class="button add-button2">
-        <p>+</p>
-      </button>
-      <button class="button cancel-button2">
-        <p>x</p>
-      </button>
-
-      <img class="pizza2" src="pizza_2.jpg" alt="p2">
-      <hr style=" margin-top: -100px;">
-    </section> -->
-
-    <!-- ЕЛЕМЕНТ 3 -->
-    <!-- <section class=item3>
-      <p>Міксовий поло (Велика)</p>
-      <img src="1.png" alt="1">
-      <p class="measures">40</p>
-      <img src="2.png" alt="2">
-      <p class="measures">780</p>
-      <p class="price">179 грн</p>
-
-      <button class="button remove-button3">
-        <p>-</p>
-      </button>
-      <div id="counter3">
-        <p>1</p>
-      </div>
-      <button class="button add-button3">
-        <p>+</p>
-      </button>
-      <button class="button cancel-button3">
-        <p>x</p>
-      </button>
-      <img class="pizza3" src="pizza_3.jpg" alt="p3">
-      <hr style=" margin-top: -100px;">
-    </section> -->
   </div>
   <!-- Боковий контейнер (Корзина) -->
 
