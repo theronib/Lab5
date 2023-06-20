@@ -1,4 +1,22 @@
 function addToCart(pizzaName, size, price, imageSrc) {
+  var pizzaOrdersDiv = document.querySelector('.pizza-orders');
+  var pizzaItems = pizzaOrdersDiv.getElementsByClassName('item');
+  for (var i = 0; i < pizzaItems.length; i++) {
+    var pizzaItem = pizzaItems[i];
+    var itemName = pizzaItem.querySelector('p').textContent;
+    if (itemName === `${pizzaName} (${size})`) {
+      var counter = pizzaItem.querySelector('.counter p');
+      var count = parseInt(counter.textContent);
+      count++;
+      counter.textContent = count;
+      cartQuantity++;
+      cartTotal += price;
+      updateCartDisplay();
+      updateCartData();
+      return;
+    }
+  }
+
   var newItem = document.createElement('section');
   newItem.className = 'item';
 
@@ -17,7 +35,7 @@ function addToCart(pizzaName, size, price, imageSrc) {
       <p>1</p>
     </div>
     <button class="button add-button">
-    <p>+</p>
+      <p>+</p>
     </button>
     <button class="button cancel-button">
       <p>x</p>
@@ -27,7 +45,6 @@ function addToCart(pizzaName, size, price, imageSrc) {
     <hr style="margin-top: -5px;">
   `;
 
-  var pizzaOrdersDiv = document.querySelector('.pizza-orders');
   pizzaOrdersDiv.appendChild(newItem);
 
   var removeButton = newItem.querySelector('.remove-button');
@@ -45,7 +62,6 @@ function addToCart(pizzaName, size, price, imageSrc) {
       updateCartDisplay();
       updateCartData();
     } else {
-      // Remove the item from the list
       pizzaOrdersDiv.removeChild(newItem);
       cartQuantity--;
       cartTotal -= price;
@@ -53,30 +69,26 @@ function addToCart(pizzaName, size, price, imageSrc) {
       updateCartData();
     }
   });
-  
 
-function handleAddButtonClick() {
-  var count = parseInt(counter.textContent);
-  count++;
-  counter.textContent = count;
-  cartQuantity++;
-  cartTotal += price;
-  updateCartDisplay();
-  updateCartData();
-}
-
-addButton.onclick = handleAddButtonClick;
+  addButton.addEventListener('click', function() {
+    var count = parseInt(counter.textContent);
+    count++;
+    counter.textContent = count;
+    cartQuantity++;
+    cartTotal += price;
+    updateCartDisplay();
+    updateCartData();
+  });
 
   cancelButton.addEventListener('click', function() {
     var count = parseInt(counter.textContent);
-    cartQuantity -= count; // Subtract the count from cartQuantity
-    cartTotal -= price * count; // Subtract the price multiplied by count from cartTotal
+    cartQuantity -= count;
+    cartTotal -= price * count;
     updateCartDisplay();
     updateCartData();
   
     pizzaOrdersDiv.removeChild(newItem);
   });
-  
 
   cartQuantity++;
   cartTotal += price;
@@ -84,6 +96,7 @@ addButton.onclick = handleAddButtonClick;
   updateCartDisplay();
   updateCartData();
 }
+
 
 
   
