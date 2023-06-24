@@ -169,6 +169,9 @@ body {
 
   body {
     zoom: 107%;
+    overflow-x: auto;
+    min-width: 1189px;
+
   }
 
 
